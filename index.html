@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sayan Ghosal - Portfolio</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #f4d03f;
+            font-size: 1.2rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #fff;
+        }
+
+        section {
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        #home {
+            text-align: center;
+            background-color: #000;
+            color: #f4d03f;
+            padding: 80px 20px;
+            position: relative;
+        }
+
+        #home img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #f4d03f;
+            animation: bounce 2s infinite;
+        }
+
+        #home h2 {
+            font-size: 2.5rem;
+            margin: 20px 0;
+        }
+
+        #home p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Add Bounce Animation to Image */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        #about h2, #skills h2, #projects h2, #contact h2 {
+            font-size: 2rem;
+            color: #000;
+            border-bottom: 3px solid #f4d03f;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        #skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #skills ul li {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 25px;
+            font-size: 1rem;
+        }
+
+        .project-item {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Add Logo Styles */
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        /* Add Button Style for Links */
+        .contact-btn {
+            background-color: #000;
+            color: #f4d03f;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .contact-btn:hover {
+            background-color: #f4d03f;
+            color: #000;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Sayan Ghosal</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <img src="mypic.jpg" alt="Sayan Ghosal">
+        <h2>Hello, I'm Sayan Ghosal</h2>
+        <p>Graduate in Computer Science | AI/ML Enthusiast | Problem Solver</p>
+      <!--  <div class="social-icons">
+            <a href="https://linkedin.com/in/sayan-ghosal-36043021b" target="_blank">
+                <img src="LinkedIn_logo.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/codersayan" target="_blank">
+                <img src="git.png" alt="GitHub">
+            </a>
+        </div> -->
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a recent graduate from Calcutta University with a Bachelor's in Computer Science. My passion for coding drives me to explore different technologies, especially in the field of AI and Machine Learning. I'm constantly improving my skills and love to take on new challenges.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C</li>
+            <li>Python</li>
+            <li>Data Structures & Algorithms</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Deep Learning</li>
+            <li>TensorFlow</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Autonomous Ground Combat Vehicle (UGCV)</h3>
+            <p>An AI-assisted vehicle capable of detecting and neutralizing human targets using YOLOv5.</p>
+        </div>
+        <div class="project-item">
+            <h3>YOLOv5 Object Detection</h3>
+            <p>Trained a custom YOLOv5 model for detecting specific objects, such as humans, in real-time video streams.</p>
+        </div>
+        <div class="project-item">
+            <h3>Simple snake game using Python</h3>
+            <p>Control the snake, eat the food, and avoid crashing into yourself!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a class="contact-btn" href="codersayan08@gmail.com">codersayan08@gmail.com</a></p>
+        <p>Connect on LinkedIn: 
+            <a class="contact-btn" href="https://linkedin.com/in/sayan-ghosal-36043021b" target="_blank">LinkedIn</a>
+        </p>
+        <p>Follow on GitHub: 
+            <a class="contact-btn" href="https://github.com/codersayan" target="_blank">GitHub</a>
+        </p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Sayan Ghosal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
